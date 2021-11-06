@@ -18,10 +18,12 @@ from django.urls import path
 from home.views import saludo
 from home.views import despedida
 from home.views import contacto
+from home.views import about
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', saludo),
     path('adios/', despedida ),
-    path('contacto/', contacto )
+    path('contacto/', contacto ),
+    path('about/', about )
 ]

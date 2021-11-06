@@ -9,5 +9,8 @@ def saludo(request):
 def despedida(request):
     return render(request, "adios.html")
 
+def about(request):
+    return render(request, "about.html")    
+
 def contacto(request):
     return HttpResponse("mi numero de contacto")
