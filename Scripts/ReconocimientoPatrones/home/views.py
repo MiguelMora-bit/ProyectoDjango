@@ -1,16 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Tejido
 
 # Create your views here.
-
-def saludo(request):
-    return render(request, "home.html")
-
-def despedida(request):
-    return render(request, "adios.html")
-
-def about(request):
-    return render(request, "about.html")    
-
-def contacto(request):
-    return HttpResponse("mi numero de contacto")
+def home(request):
+    tejidos = Tejido.objects.get_queryset()
+    return render(request, "home.html", {"lista": tejidos})

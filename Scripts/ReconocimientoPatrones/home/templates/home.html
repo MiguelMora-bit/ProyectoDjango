@@ -1,12 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Hola Mundo!!!!!!!!!!!!! 😊</h1>
-</body>
-</html>
+{% extends "header.html" %}
+
+{% block contenido %}
+
+    <h1>Curso reconocimiento de Patrones Sintactico Estructural</h1>
+    <h2>Octubre mes del cancer de mama </h2>
+
+    <table style="border: 1px black solid">
+        <thead>
+            <tr style="border: 1px black solid">
+                <th style="border: 1px black solid">Clave</th>
+                <th style="border: 1px black solid">Color</th>
+                <th style="border: 1px black solid">Temperatura</th>
+                <th style="border: 1px black solid">Inflamación</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for elemento in lista %}
+            <tr style="border: 1px black solid">
+                <td style="border: 1px black solid">{{elemento.pk}}</td>
+                <td style="border: 1px black solid">{{elemento.color}}</td>
+                <td style="border: 1px black solid">{{elemento.temperatura}}</td>
+                <td style="border: 1px black solid">{{elemento.inflammation}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock contenido %}

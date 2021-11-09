@@ -19,7 +19,8 @@ class Tejido(models.Model):
 
     temperatura = models.FloatField()
     color = models.FloatField()
-    name = models.ForeignKey(Paciente, on_delete= models.CASCADE)
+    inflammation = models.FloatField(verbose_name="Inflamación")
+    name = models.ForeignKey(Paciente, on_delete= models.CASCADE, blank=True, null=True)
 
     class Meta:
         verbose_name = ("Tejido")

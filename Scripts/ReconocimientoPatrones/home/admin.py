@@ -6,7 +6,7 @@ from .models import Paciente
 # Register your models here.
 
 class TejidoAdmin(admin.ModelAdmin):
-    list_display = ("color", "temperatura", "name")
+    list_display = ("color", "temperatura", "inflammation", "name")
     list_filter = ("color",)
     #readonly_fields = ("color",)
     ordering = ("color",)
