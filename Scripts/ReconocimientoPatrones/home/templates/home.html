@@ -2,29 +2,25 @@
 
 {% block contenido %}
 
-    <h1>Curso reconocimiento de Patrones Sintactico Estructural</h1>
-    <h2>Octubre mes del cancer de mama </h2>
+   
 
-    <table style="border: 1px black solid">
-        <thead>
-            <tr style="border: 1px black solid">
-                <th style="border: 1px black solid">Clave</th>
-                <th style="border: 1px black solid">Color</th>
-                <th style="border: 1px black solid">Temperatura</th>
-                <th style="border: 1px black solid">Inflamación</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for elemento in lista %}
-            <tr style="border: 1px black solid">
-                <td style="border: 1px black solid">{{elemento.pk}}</td>
-                <td style="border: 1px black solid">{{elemento.color}}</td>
-                <td style="border: 1px black solid">{{elemento.temperatura}}</td>
-                <td style="border: 1px black solid">{{elemento.inflammation}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+
+<form action="" method="get">
+
+    <p>Selecciona una distancia:</p>
+
+    <div>
+        <input type="radio" id="Euclideana" name="distancia" value="Euclideana" checked>
+        <label for="huey">Euclideana</label>
+
+        <input type="radio" id="Mahalanobis" name="distancia" value="Mahalanobis">
+        <label for="dewey">Mahalanobis</label>
+
+        <input type="radio" id="Manhattan" name="distancia" value="Manhattan">
+        <label for="louie">Manhattan</label>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
 
 
 {% endblock contenido %}

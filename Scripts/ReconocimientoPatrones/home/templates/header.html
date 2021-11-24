@@ -1,33 +1,54 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Home</title>
 </head>
-<body style="background-color: pink">
-    <ul>
-         <li>
-        <a href="{% url 'home:home' %}">
-            Home
-        </a>
-    </li>
-    <li>
-        <a href="{% url 'about:about' %}">
-            About
-        </a>
-    </li>
-    <li>
-        <a href="{% url 'contacto:contacto' %}">
-            Contacto
-        </a>
-    </li>
-    </ul>
 
-{% block contenido %}
+<header>
+    <div class="overlay">
+        <h1>Octubre mes del cáncer de mama</h1>
+        <h3>Eres amor, eres fuente de vida, eres fuerte</h3>
+        <p>Un día te darás cuenta que no eres una superviviente más, sino una valiente guerrera que jamás se rindió.</p>
+        <br>
+        <button> <a href="{% url 'home:home' %}">
+                Home
+            </a>
+        </button>
+        <button> <a href="{% url 'tejidos:tejidos' %}">
+                Tejidos
+            </a>
+        </button>
+        <button>
+            <a href="{% url 'grafo:grafo' %}">
+                Grafo
+            </a>
+        </button>
+        <button>
+            <a href="{% url 'contacto:contacto' %}">
+                Contacto
+            </a>
+        </button>
+        <button><a href="{% url 'about:about' %}">
+                About
+            </a>
+        </button>
 
-{% endblock contenido %}
+    </div>
+</header>
+
+<body class="fondo">
+
+    {% block contenido %}
+
+    {% endblock contenido %}
 
 </body>
+
 </html>

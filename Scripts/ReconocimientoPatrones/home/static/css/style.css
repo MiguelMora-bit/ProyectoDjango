@@ -1,0 +1,117 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+
+header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #fb9cbb 10%, #febed1 80%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+    
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+}
+
+p {
+font-size: 20px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.fondo{
+    height: 900px;
+    background-color: #ffdee8;
+}
+
+.centrar{
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+table {
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px solid #fb9cbb;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+thead tr:first-child {
+    background: #fb9cbb;
+    color: white;
+    border: none;
+}
+
+.tablaScroll{
+	overflow: scroll;
+    width: 90%;
+    height: 54%;
+    margin: 50px auto;
+}
+
+
+body::-webkit-scrollbar {
+	color: white;
+}
+
+.tablaScroll::-webkit-scrollbar {
+    width: 20px;     
+    height: 20px;
+}
+
+.imagenes {
+	text-align: center;
+}
+
+.imagenes img{
+	width: 500px;
+	height: 300px;
+}
+
+p{
+	padding: 0px 50px;
+}
+
+.principal{
+	text-align: center;
+	font: 55px;
+	padding: 50px;
+}

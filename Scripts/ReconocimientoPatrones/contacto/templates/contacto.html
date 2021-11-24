@@ -1,8 +1,21 @@
 {% extends "header.html" %}
 
 {% block contenido %}
-    <h1>
-        Llamame si me necesitas
+{% load static %}
+    <h1 class="principal">
+        Fundaciones mexicanas que luchan contra el cáncer de mama
     </h1>
+    <div class="imagenes">
+        <img src="{% static 'img/alma.png' %}" alt="" srcset="">
+    </div>
+    <br>
+    <p>
+        La principal función de esta organización es la reconstrucción de seno en mujeres que ganaron la lucha contra el cáncer de mama, así como también la implementación de diversos proyectos que brindan información en comunidades y dan atención y libros en general sobre el cuidado y prevención del cáncer de seno.
+    </p>
+
+    <p style="text-align: center;">
+        <i>"Somos un grupo de médicos cirujanos plásticos, con subespecialidad en reconstrucción mamaria, unidos por una causa: Ayudar a reconstruir las vidas de sobrevivientes de cáncer de mama, realizando cirugías sin  costo alguno. Con el apoyo de empresas y personas que creen en esta causa, hemos reconstruido a más de 500 mujeres en diferentes estados de la República Mexicana."</i>
+    </p>
+    
 
 {% endblock contenido %}
