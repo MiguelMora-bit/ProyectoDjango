@@ -14,7 +14,7 @@ header {
 header .overlay{
 	width: 100%;
 	height: 100%;
-	padding: 50px;
+	padding: 30px;
 	color: #FFF;
 	text-shadow: 1px 1px 1px #333;
     background-image: linear-gradient( 135deg, #fb9cbb 10%, #febed1 80%);
@@ -24,13 +24,13 @@ header .overlay{
 h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 80px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
     
 }
 
 h3, p {
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 p {
@@ -44,7 +44,6 @@ button {
 	border-radius: 50px;
 	color: #333;
 	background: #fff;
-	margin-bottom: 50px;
 	box-shadow: 0 3px 20px 0 #0000003b;
 }
 
@@ -53,7 +52,6 @@ button:hover{
 }
 
 .fondo{
-    height: 900px;
     background-color: #ffdee8;
 }
 
@@ -97,15 +95,6 @@ body::-webkit-scrollbar {
     height: 20px;
 }
 
-.imagenes {
-	text-align: center;
-}
-
-.imagenes img{
-	width: 500px;
-	height: 300px;
-}
-
 p{
 	padding: 0px 50px;
 }
@@ -114,4 +103,27 @@ p{
 	text-align: center;
 	font: 55px;
 	padding: 50px;
+}
+
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+	height: 580px;
+	padding-top: 20px;
+}
+
+.imagenes img{
+    border-radius: 20px;
+}
+
+.mensaje{
+    text-align: center;
+    border: 5px white solid;
+    width: 210px;
+    margin: auto;
+    font-size: 30px;
+    transform: translate(0px, -85px);
+    background-color: white;
+    border-radius: 15px;
 }

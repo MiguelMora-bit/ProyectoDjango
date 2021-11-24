@@ -1,26 +1,16 @@
+
 {% extends "header.html" %}
 
 {% block contenido %}
 
-   
+{% load static %}
 
-
-<form action="" method="get">
-
-    <p>Selecciona una distancia:</p>
-
-    <div>
-        <input type="radio" id="Euclideana" name="distancia" value="Euclideana" checked>
-        <label for="huey">Euclideana</label>
-
-        <input type="radio" id="Mahalanobis" name="distancia" value="Mahalanobis">
-        <label for="dewey">Mahalanobis</label>
-
-        <input type="radio" id="Manhattan" name="distancia" value="Manhattan">
-        <label for="louie">Manhattan</label>
-    </div>
-    <button type="submit">Enviar</button>
-</form>
-
+<div class="imagenes">
+    <img src="{% static 'img/image1.png' %}" alt="">
+    <img src="{% static 'img/image2.png' %}" alt="">
+    <img src="{% static 'img/image3.png' %}" alt="">
+    
+</div>
+<div class="mensaje">“Eres amor, eres fuente de vida, eres fuerte”.</div>
 
 {% endblock contenido %}
