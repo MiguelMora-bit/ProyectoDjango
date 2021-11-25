@@ -3,27 +3,28 @@
 {% block contenido %}
 {% load static %}
 
-<div class="tablaScroll">
-    <table class="centrar">
-        <thead>
-            <tr>
-                <th>Clave</th>
-                <th>Color</th>
-                <th>Temperatura</th>
-                <th>Inflamación</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for elemento in lista %}
-            <tr>
-                <th>{{elemento.pk}}</td>
-                <th>{{elemento.color}}</td>
-                <th>{{elemento.temperatura}}</td>
-                <th>{{elemento.inflammation}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+<div class="tablaScroll" >
+        <table class="centrar" style="border: 5px solid #fb9cbb">
+            <thead>
+                <tr>
+                    <th>Clave</th>
+                    <th>Color</th>
+                    <th>Temperatura</th>
+                    <th>Inflamación</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for elemento in lista %}
+                <tr>
+                    <th>{{elemento.pk}}</td>
+                    <th>{{elemento.color}}</td>
+                    <th>{{elemento.temperatura}}</td>
+                    <th>{{elemento.inflammation}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    
 </div>
 
 {% endblock contenido %}

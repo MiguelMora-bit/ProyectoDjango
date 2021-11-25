@@ -66,7 +66,6 @@ table {
     line-height: 40px;
     border-collapse: separate;
     border-spacing: 0;
-    border: 5px solid #fb9cbb;
     width: 500px;
     margin: 50px auto;
     border-radius: 20px;
@@ -81,7 +80,7 @@ thead tr:first-child {
 .tablaScroll{
 	overflow: scroll;
     width: 90%;
-    height: 54%;
+    height: 550px;
     margin: 50px auto;
 }
 
@@ -93,6 +92,7 @@ body::-webkit-scrollbar {
 .tablaScroll::-webkit-scrollbar {
     width: 20px;     
     height: 20px;
+	display: none;
 }
 
 p{
@@ -126,4 +126,14 @@ p{
     transform: translate(0px, -85px);
     background-color: white;
     border-radius: 15px;
+}
+
+.centrar thead tr th { 
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: #fb9cbb;
+	padding: 0px;
+	margin: 0px;
+	transform: translate(0px, -3px);
 }
