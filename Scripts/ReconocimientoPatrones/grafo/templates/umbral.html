@@ -1,0 +1,28 @@
+{% extends "header.html" %}
+
+{% block contenido %}
+
+<div class="tablaScroll" style="border: 5px solid #fb9cbb;">
+    <table class="centrar">
+        <thead>
+            <tr>
+                <th>Vo</th>
+                <th>Vf</th>
+                <th>Distancia</th>
+                <th>Conectado</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for elemento in distancias %}
+            <tr>
+                {% for distancia in elemento %}
+                    <th>{{distancia}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<br>
+{% endblock contenido %}

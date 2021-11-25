@@ -2,62 +2,56 @@
 
 
 header {
+    display: flex;
+    justify-content: space-around;
+	background-color: white;
+	padding: 0px 30px;
+	padding-top: 30px;
+}
+
+
+.direcciones{
+    font-size: 180%;
+}
+
+.direcciones a {
+    text-decoration: none ;
+    padding: 0px 10px;
+    color: #e4007c;
+}
+
+.botonPersonalizado{
+	text-decoration: none ;
+    padding: 0px 10px;
+    color: #e4007c;
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	font-weight: bold;
 	text-align: center;
-	width: 100%;
-	height: auto;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-	border-radius: 0 0 85% 85% / 30%;
-}
-header .overlay{
-	width: 100%;
-	height: 100%;
-	padding: 30px;
-	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
-    background-image: linear-gradient( 135deg, #fb9cbb 10%, #febed1 80%);
-	
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
-h1 {
-	font-family: 'Dancing Script', cursive;
-	font-size: 80px;
-	margin-bottom: 10px;
-    
-}
 
-h3, p {
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 20px;
-}
-
-p {
-font-size: 20px;
-}
-
-button {
+.button {
 	border: none;
 	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
+	padding: 20px 40px;
+	color: #6A1B9A;
 	background: #fff;
-	box-shadow: 0 3px 20px 0 #0000003b;
+	font-size: 20px;
+	text-decoration: none;
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+	font-family: 'Anton', sans-serif;
 }
 
 button:hover{
 	cursor: pointer;
-}
-
-.fondo{
-    background-color: #ffdee8;
-}
-
-.centrar{
-    margin: 30px auto;
-    border-collapse: collapse;
 }
 
 table {
@@ -67,7 +61,6 @@ table {
     border-collapse: separate;
     border-spacing: 0;
     width: 500px;
-    margin: 50px auto;
     border-radius: 20px;
 }
 
@@ -75,41 +68,50 @@ thead tr:first-child {
     background: #fb9cbb;
     color: white;
     border: none;
+	font-size: 25px;
 }
 
 .tablaScroll{
 	overflow: scroll;
     width: 90%;
-    height: 550px;
+    height: 700px;
     margin: 50px auto;
 }
 
-
 body::-webkit-scrollbar {
-	color: white;
+	width: 20px; 
+	background: #febed1;  
+	 
 }
 
-.tablaScroll::-webkit-scrollbar {
-    width: 20px;     
-    height: 20px;
-	display: none;
+body {
+	scrollbar-width: thin;
+  	scrollbar-color: #fb9cbb #febed1;
 }
 
-p{
-	padding: 0px 50px;
-}
+*::-webkit-scrollbar {
+	width: 12px;
+  }
+
+*::-webkit-scrollbar-thumb, .tablaScroll::-webkit-scrollbar-thumb{
+	background-color: #fb9cbb;
+	border-radius: 20px;
+	border: 3px solid #febed1;
+  }
 
 .principal{
 	text-align: center;
-	font: 55px;
 	padding: 50px;
+	width: 65%;
+	margin: 30px auto;
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
 }
-
 
 .imagenes{
     display: flex;
     justify-content: center;
-	height: 580px;
+	height: 600px;
 	padding-top: 20px;
 }
 
@@ -120,12 +122,18 @@ p{
 .mensaje{
     text-align: center;
     border: 5px white solid;
-    width: 210px;
+    width: 350px;
     margin: auto;
-    font-size: 30px;
-    transform: translate(0px, -85px);
+    font-size: 40px;
+    transform: translate(0px, -65px);
     background-color: white;
     border-radius: 15px;
+}
+
+.contenedor{
+	background-color: white;
+	height: 750px;
+	
 }
 
 .centrar thead tr th { 
@@ -136,4 +144,92 @@ p{
 	padding: 0px;
 	margin: 0px;
 	transform: translate(0px, -3px);
+}
+
+.fondoNube {
+    background: white url("../img/fondo.jpeg");
+	background-size: cover;
+}
+
+.fondoRosa {
+    background: white url("../img/fondo2.jpeg");
+	background-size: cover;
+}
+
+.logo{
+	height: 150px;
+	width: 150px;
+}
+
+.contenido{
+	padding: 30px;
+	background-color: white;
+}
+
+.tarjetaInformativa{
+	display: flex;
+	padding: 50px;
+	width: 65%;
+	height: 30%;
+	margin: auto;	
+}
+
+.tarjetaInformativa img{
+	height: 80%;
+	width: 65%;
+}
+
+.contenido p {
+	text-align: justify;
+}
+
+.frase h2{
+    width: 410px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    color: #e4007c;
+}
+
+p{
+	font-size: 25px;
+}
+
+.asosiacion{
+	background-color: white;
+	padding: 30px 10px;
+	margin: 50px;
+	width: 25%;
+	border-radius: 40px;
+}
+
+.asosiacion img{
+	width: 300px;
+	height: 150px;
+}
+
+.referencias{
+	display: flex;
+	justify-content: space-around;
+}
+
+.asosiacion div{
+	text-align: center;
+}
+
+.referencias a{
+	text-decoration: none;
+}
+
+.suscribirse{
+	 padding: 30px;
+	 background-color: #CE93D8;
+	 margin: 30px auto;
+	 width: 30%;
+	 border-radius: 30px;
+	 text-align: center;
+}
+
+form *{
+	padding: 10px;
 }

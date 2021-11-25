@@ -1,7 +1,31 @@
 {% extends "header.html" %}
 
 {% block contenido %}
+{% load static %}
 
-    <h1>La banda de Isi presente 🖥️</h1>
+<body class="fondoNube">
+
+    <div class="suscribirse">
+        <form action=" {% url 'home:home' %}">
+            <h2>¡No estás Sola!</h2>
+            <p>Ingresa tu correo</p>
+            <input style="margin: 30px; width: 85%;" type="email" id="email" name="email" placeholder="damaris@gmail.com" required>
+            <button class="button" type="submit">
+                Contactar
+            </button>
+            <p>Deja tu email y nosotros te contactamos</p>
+        </form>
+    </div>
+
+    <div class="redes">
+        <h2>Síguenos en Instagram</h2>
+        <div style="text-align: center;">
+            <img src="{% static 'img/insta.jpeg' %}" alt="">
+        </div>
+
+    </div>
+
+
+</body>
 
 {% endblock contenido %}

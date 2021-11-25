@@ -2,20 +2,66 @@
 
 {% block contenido %}
 {% load static %}
+
+<body class="fondoRosa">
+    
+
     <h1 class="principal">
         Fundaciones mexicanas que luchan contra el cáncer de mama
     </h1>
-    <div class="imagenes">
-        <img src="{% static 'img/alma.png' %}" alt="" srcset="">
-    </div>
-    <br>
-    <p>
-        La principal función de esta organización es la reconstrucción de seno en mujeres que ganaron la lucha contra el cáncer de mama, así como también la implementación de diversos proyectos que brindan información en comunidades y dan atención y libros en general sobre el cuidado y prevención del cáncer de seno.
-    </p>
-
-    <p style="text-align: center;">
-        <i>"Somos un grupo de médicos cirujanos plásticos, con subespecialidad en reconstrucción mamaria, unidos por una causa: Ayudar a reconstruir las vidas de sobrevivientes de cáncer de mama, realizando cirugías sin  costo alguno. Con el apoyo de empresas y personas que creen en esta causa, hemos reconstruido a más de 500 mujeres en diferentes estados de la República Mexicana."</i>
-    </p>
     
-g
+    <div class="referencias">
+    
+        <div class="asosiacion">
+            <div>
+                <a href="https://www.alma.org.mx/">
+                    <img src="{% static 'img/alma.png' %}" alt="">
+                </a>
+            </div>
+            <div class="contenido">
+                <p>
+                    La principal función de esta organización es la reconstrucción de seno en mujeres que ganaron la
+                    lucha
+                    contra el cáncer de mama, así como también la implementación de diversos proyectos que brindan
+                    información
+                    en comunidades y dan atención y libros en general sobre el cuidado y prevención del cáncer de seno.
+                </p>
+            </div>
+    
+        </div>
+    
+    
+        <div class="asosiacion">
+            <div>
+                <img src="{% static 'img/asosiacion2.png' %}" alt="">
+            </div>
+            <div class="contenido">
+                <p>
+                    Esta fundación se formó el 20 de junio del 2016 con el fin de brindar a las mujeres con cáncer de mama y
+                    a las que se encuentran en la lucha contra otros tipos de cáncer, una atención digna a través de un
+                    tratamiento integral de belleza, no solo externa si no también interna.
+                </p>
+            </div>
+        </div>
+    
+        <div class="asosiacion">
+            <div>
+                <a href="https://www.cimafundacion.org/">
+                    <img src="{% static 'img/asosiacion3.png' %}" alt="">
+                </a>
+            </div>
+            <div class="contenido">
+                <p>
+                    Fundada en octubre de 2002 su misión es contribuir a la disminución de mortalidad por cáncer de mama en
+                    México a través de prácticas como la de educar, informar, servir a pacientes e incidir en políticas
+                    públicas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
 {% endblock contenido %}

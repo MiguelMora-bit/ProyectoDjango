@@ -2,19 +2,20 @@
 
 {% block contenido %}
 
-<div class="tablaScroll" style="border: 5px solid #fb9cbb">
-    <table class="centrar">
-        <tbody>
-            {% for elemento in distancias %}
-            <tr>
-                {% for distancia in elemento %}
-                    <th>{{distancia}}</td>
+<body class="fondoRosa">
+    <div class="tablaScroll" style="border: 10px solid #fb9cbb;">
+        <table class="centrar">
+            <tbody>
+                {% for elemento in distancias %}
+                <tr>
+                    {% for distancia in elemento %}
+                        <th>{{distancia}}</td>
+                    {% endfor %}
+                </tr>
                 {% endfor %}
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
+            </tbody>
+        </table>
+    </div>
+</body>
 
-<br>
 {% endblock contenido %}

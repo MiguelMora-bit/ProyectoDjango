@@ -1,16 +1,65 @@
-
 {% extends "header.html" %}
 
 {% block contenido %}
 
 {% load static %}
 
-<div class="imagenes">
-    <img src="{% static 'img/image1.png' %}" alt="">
-    <img src="{% static 'img/image2.png' %}" alt="">
-    <img src="{% static 'img/image3.png' %}" alt="">
+<body class="fondoNube">
     
-</div>
-<div class="mensaje">“Eres amor, eres fuente de vida, eres fuerte”.</div>
+    <div class="contenedor">
+
+        <div class="imagenes">
+    
+            <img src="{% static 'img/image1.png' %}" alt="">
+            <img src="{% static 'img/image2.png' %}" alt="">
+            <img src="{% static 'img/image3.png' %}" alt="">
+    
+        </div>
+        <div class="mensaje">“Eres amor, eres fuente de vida, eres fuerte”.</div>
+    
+    </div>
+    
+    <div class="information">
+    
+        <div class="tarjetaInformativa">
+            <img src="{% static 'img/informacion1.jpeg' %}" alt="">
+    
+            <div class="contenido">
+                <h2>Diagnostico a tiempo</h2>
+                <p>El diagnóstico temprano del cáncer salva vidas y reduce los costos de tratamiento</p>
+            </div>
+    
+        </div>
+    
+        <div class="tarjetaInformativa">
+            <img src="{% static 'img/informacion2.jpeg' %}" alt="">
+    
+            <div class="contenido">
+                <h2>¡Revísate!</h2>
+                <p>A veces el cáncer de seno es detectado después de que surgen síntomas, pero muchas mujeres no llegan a
+                    manifestarlos. Es por este motivo que hacer las pruebas de detección periódicas es tan importante.</p>
+            </div>
+    
+        </div>
+    
+        <div class="tarjetaInformativa">
+            <img src="{% static 'img/informacion3.jpeg' %}" alt="">
+    
+            <div class="contenido">
+                <h2>Cuida tu salud!!!</h2>
+                <p>Usted puede ayudar a reducir su riesgo de cáncer al tomar decisiones que fomenten la buena salud, como
+                    comer sanamente, mantener un estilo de vida activo y no fumar. También es importante seguir las guías
+                    para las pruebas de detección recomendadas, las cuales son útiles para detectar ciertos tipos de cáncer
+                    en sus etapas iniciales.</p>
+            </div>
+    
+        </div>
+    
+    
+    </div>
+    
+
+</body>
+
 
 {% endblock contenido %}
