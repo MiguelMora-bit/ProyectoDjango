@@ -1,28 +1,31 @@
 {% extends "header.html" %}
 
 {% block contenido %}
+{% load static %}
 
-<div class="tablaScroll" style="border: 5px solid #fb9cbb;">
-    <table class="centrar">
-        <thead>
-            <tr>
-                <th>Vo</th>
-                <th>Vf</th>
-                <th>Distancia</th>
-                <th>Conectado</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for elemento in distancias %}
-            <tr>
-                {% for distancia in elemento %}
-                    <th>{{distancia}}</td>
+<body class="fondoRosa">
+    <div class="tablaScroll" style="border: 10px solid #fb9cbb; width: 535px;">
+        <table class="centrar">
+            <thead>
+                <tr>
+                    <th>Vo</th>
+                    <th>Vf</th>
+                    <th>Distancia</th>
+                    <th>Conectado</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for umbral in umbrales %}
+                <tr>
+                    <th>{{umbral.0}}</td>
+                    <th>{{umbral.1}}</td>
+                    <th>{{umbral.2}}</td>
+                    <th>{{umbral.3}}</td>
+                </tr>
                 {% endfor %}
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
+            </tbody>
+        </table>
+    </div>
+</body>
 
-<br>
 {% endblock contenido %}

@@ -233,3 +233,25 @@ p{
 form *{
 	padding: 10px;
 }
+
+.formUmbral{
+	background-color: #F48FB1;
+	padding: 20px;
+	margin: 50px auto;
+	width: 40%;
+	border-radius: 30px;
+}
+
+.formUmbral *{
+	display: block;
+	margin: 20px auto;
+}
+
+.formUmbral input{
+	width: 80%;
+}
+
+.formUmbral button{
+	color: #EC407A;
+}
+

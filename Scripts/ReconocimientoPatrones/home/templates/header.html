@@ -14,7 +14,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
     </style>
-    <title>Home</title>
+    <link rel="shortcut icon" href="{% static 'img/logo2.png' %}">
+    <title>Vida rosa</title>
 </head>
 
 <header>
@@ -27,7 +28,7 @@
 
     <div class="direcciones">
         <a href="{% url 'home:home' %}">
-            Home
+            Inicio
         </a>
         <a href="{% url 'tejidos:tejidos' %}">
             Tejidos
@@ -39,7 +40,7 @@
             Contacto
         </a>
         <a href="{% url 'about:about' %}">
-            About
+            Acerca de
         </a>
     </div>
 </header>

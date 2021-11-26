@@ -2,7 +2,20 @@
 
 {% block contenido %}
 
+{% load static %}
+
 <body class="fondoRosa">
+
+    <div class="formUmbral">
+        <form action="{% url 'grafo:gradoProcesado' %}" method="GET">
+            {% csrf_token %}
+            <h2>Ingresa un umbral:</h2>
+            <input type="number" id="umbral" name="umbral" min="0" max="100" placeholder="Ingresa un umbral entre 0 y 100">
+            <button class="button"  type="submit">Enviar</button>
+        </form>
+    </div>
+
+
     <div class="tablaScroll" style="border: 10px solid #fb9cbb;">
         <table class="centrar">
             <tbody>

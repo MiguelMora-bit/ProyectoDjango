@@ -1,10 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from home.models import Tejido
 import math
 import numpy as np
 
-def grafo(request):
 
+distancias = []
+
+def grafo(request):
+    global distancias
     tejidos = Tejido.objects.get_queryset()
     matrizPropiedades = []
     for tejido in tejidos:
@@ -16,6 +19,7 @@ def grafo(request):
         matrizPropiedades.append(tejidoPropiedades)
     
     dimension = len(matrizPropiedades)
+   
     distancias = np.zeros((dimension,dimension))
 
     for i in range(dimension):
@@ -32,3 +36,27 @@ def grafo(request):
 def distanciaEuclideana(p,q):
 	distancia = math.dist(p,q)
 	return distancia
+
+
+def procesaGrafo(request):
+    umbrales = []
+    umbral = request.GET["umbral"]
+    tamañoDistancias = len(distancias)
+
+    if not(umbral):
+        umbral = 0
+    else:
+        umbral = float(umbral)
+
+    for i in range(tamañoDistancias):
+        for j in range(i, tamañoDistancias):
+            dist = float(distancias[i,j])
+            if i == j:
+                umbrales.append([i,j,dist, "Sí" ])
+            elif (dist > umbral):
+                umbrales.append([i,j,dist, "Sí" ])
+            else:
+                umbrales.append([i,j,dist, "No" ])
+    
+    diccionario = {"umbrales": umbrales}
+    return render(request, 'umbral.html', diccionario)
